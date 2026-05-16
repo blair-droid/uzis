@@ -59,7 +59,7 @@ pip install -r requirements.txt
 python prepare_data.py data/source.xlsx
 ```
 
-Pro stažení **aktuální** verze přímo z NZIP (vyžaduje funkční síť):
+Pro stažení **aktuální** verze přímo z NZIP:
 
 ```bash
 python prepare_data.py --download
