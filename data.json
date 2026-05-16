@@ -1,0 +1,714 @@
+{
+  "metadata": {
+    "nazev_datasetu": "Zdravotnické prostředky na poukaz dle úhradové skupiny (datový souhrn)",
+    "id_souboru": "NR-04-33",
+    "verze_souhrnu": "2025-01.01",
+    "zdroj": "Národní registr hrazených zdravotních služeb (NRHZS)",
+    "spravce": "Ústav zdravotnických informací a statistiky ČR (ÚZIS ČR)",
+    "url_nzip": "https://www.nzip.cz/data/2215-zdravotnicke-prostredky-poukaz-uhradova-skupina-datovy-souhrn",
+    "url_xlsx": "https://www.nzip.cz/data/nrhzs/datove-souhrny/Datovy-souhrn-NR-04-33-zdravotnicke-prostredky-poukaz-uhradova-skupina-2025-01.xlsx",
+    "licence": "CC BY 4.0",
+    "roky": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "datum_zpracovani_zdroje": "27.11.2025",
+    "pravni_zaklad": "zákon č. 48/1997 Sb., příloha 3, oddíl C, tabulka č. 1"
+  },
+  "kategorie": [
+    {
+      "kod": "01",
+      "nazev": "Krycí prostředky",
+      "plny_nazev": "ZP krycí (obvazy, gázy, krytí ran)",
+      "priklady": "sterilní gázy, krytí na chronické rány, hydrokoloidní krytí, krytí pro vlhké hojení",
+      "pacienti": [
+        134682,
+        133492,
+        136308,
+        136203,
+        139405
+      ],
+      "baleni": [
+        2098478.49,
+        1876796.97,
+        1984339.44,
+        2198299.41,
+        2423764.17
+      ],
+      "uhrada_kc": [
+        382559136.07,
+        490618855.19,
+        658362753.67,
+        1050398645.45,
+        1516057740.81
+      ]
+    },
+    {
+      "kod": "02",
+      "nazev": "Inkontinence",
+      "plny_nazev": "ZP pro inkontinentní pacienty",
+      "priklady": "plenkové kalhotky, podložky, vložky pro inkontinenci",
+      "pacienti": [
+        348187,
+        346864,
+        356438,
+        366516,
+        375828
+      ],
+      "baleni": [
+        11703874.4,
+        11789705.52,
+        12377509.87,
+        12869116.62,
+        13463224.11
+      ],
+      "uhrada_kc": [
+        2412001560.91,
+        2430475122.27,
+        2568552998.41,
+        2761825389.41,
+        2868170080.73
+      ]
+    },
+    {
+      "kod": "03",
+      "nazev": "Dýchání a výživa",
+      "plny_nazev": "ZP respirační, inhalační a pro aplikaci enterální výživy",
+      "priklady": "inhalátory, kyslíkové koncentrátory, sondy pro enterální výživu",
+      "pacienti": [
+        18587,
+        19253,
+        19732,
+        21250,
+        21810
+      ],
+      "baleni": [
+        896358.17,
+        968899.8,
+        1051015.3,
+        1136816.0,
+        1224887.0
+      ],
+      "uhrada_kc": [
+        1088617568.92,
+        1165201611.14,
+        1264167788.92,
+        1378760338.16,
+        1469324202.26
+      ]
+    },
+    {
+      "kod": "04",
+      "nazev": "Stomie",
+      "plny_nazev": "ZP pro pacienty se stomií",
+      "priklady": "stomické sáčky, podložky, ochranné krémy",
+      "pacienti": [
+        450845,
+        478785,
+        533613,
+        544146,
+        556693
+      ],
+      "baleni": [
+        506482.73,
+        540860.0,
+        604913.0,
+        618081.0,
+        631635.0
+      ],
+      "uhrada_kc": [
+        309070259.21,
+        329459969.33,
+        377544638.7,
+        396356777.4,
+        399404602.52
+      ]
+    },
+    {
+      "kod": "05",
+      "nazev": "Diabetes",
+      "plny_nazev": "ZP pro pacienty s diabetem",
+      "priklady": "glukometry, testovací proužky, jehly, inzulínové pumpy, senzory CGM",
+      "pacienti": [
+        349138,
+        363178,
+        368891,
+        375604,
+        379996
+      ],
+      "baleni": [
+        2294321.67,
+        2551631.31,
+        2675262.93,
+        2824617.0,
+        2925330.24
+      ],
+      "uhrada_kc": [
+        1581703415.25,
+        1816500384.69,
+        2040806904.52,
+        2330686163.08,
+        2481404482.18
+      ]
+    },
+    {
+      "kod": "06",
+      "nazev": "Kompresivní terapie",
+      "plny_nazev": "ZP pro kompresivní terapii",
+      "priklady": "kompresivní punčochy, bandáže, návleky",
+      "pacienti": [
+        368612,
+        385766,
+        414574,
+        418600,
+        418259
+      ],
+      "baleni": [
+        905301.0,
+        956722.7,
+        1077884.7,
+        1143007.0,
+        1176953.4
+      ],
+      "uhrada_kc": [
+        157791596.12,
+        173216667.53,
+        184420464.68,
+        197533768.48,
+        198760877.85
+      ]
+    },
+    {
+      "kod": "07",
+      "nazev": "Ortopedie a protetika",
+      "plny_nazev": "ZP ortopedicko-protetické a ortopedická obuv",
+      "priklady": "protézy končetin, ortézy, ortopedické vložky, ortopedická obuv",
+      "pacienti": [
+        219063,
+        235879,
+        271067,
+        275483,
+        281606
+      ],
+      "baleni": [
+        384762.2,
+        406769.5,
+        473612.27,
+        479153.8,
+        488723.5
+      ],
+      "uhrada_kc": [
+        450489501.03,
+        507235655.37,
+        562511633.86,
+        604011784.28,
+        598258202.89
+      ]
+    },
+    {
+      "kod": "08",
+      "nazev": "Mobilita",
+      "plny_nazev": "ZP pro pacienty s poruchou mobility",
+      "priklady": "invalidní vozíky, chodítka, berle",
+      "pacienti": [
+        30697,
+        32473,
+        37813,
+        40285,
+        39447
+      ],
+      "baleni": [
+        32179.0,
+        34185.0,
+        74955.0,
+        87687.0,
+        88131.0
+      ],
+      "uhrada_kc": [
+        233281012.47,
+        247943030.41,
+        322319282.21,
+        364727448.26,
+        360381779.92
+      ]
+    },
+    {
+      "kod": "09",
+      "nazev": "Zrak",
+      "plny_nazev": "ZP pro pacienty s poruchou zraku",
+      "priklady": "brýle, brýlové čočky, pomůcky pro slabozraké",
+      "pacienti": [
+        16212,
+        16863,
+        141532,
+        141764,
+        136570
+      ],
+      "baleni": [
+        26146.0,
+        26593.0,
+        185643.0,
+        187362.0,
+        181927.0
+      ],
+      "uhrada_kc": [
+        10851828.73,
+        11371068.43,
+        110017263.32,
+        108898751.35,
+        102341004.8
+      ]
+    },
+    {
+      "kod": "10",
+      "nazev": "Sluch",
+      "plny_nazev": "ZP pro pacienty s poruchou sluchu",
+      "priklady": "sluchadla, kochleární implantáty (komponenty)",
+      "pacienti": [
+        54044,
+        70326,
+        86412,
+        94057,
+        110209
+      ],
+      "baleni": [
+        1352184.53,
+        1713165.51,
+        1252976.86,
+        1280371.0,
+        1644231.2
+      ],
+      "uhrada_kc": [
+        543289411.86,
+        643579307.17,
+        708503601.61,
+        832026893.42,
+        961173631.13
+      ]
+    },
+    {
+      "kod": "11",
+      "nazev": "Hlas a řeč",
+      "plny_nazev": "ZP pro pacienty s poruchou hlasu a řeči",
+      "priklady": "hlasivky, komunikační pomůcky",
+      "pacienti": [
+        107069,
+        123349,
+        141350,
+        159274,
+        170036
+      ],
+      "baleni": [
+        224913.9,
+        251470.0,
+        280607.93,
+        311169.0,
+        329129.0
+      ],
+      "uhrada_kc": [
+        217080659.95,
+        262045670.98,
+        322043972.27,
+        373414417.59,
+        405002239.79
+      ]
+    }
+  ],
+  "totals": {
+    "baleni": [
+      20425002.09,
+      21116799.31,
+      22038720.3,
+      23135679.83,
+      24577935.62
+    ],
+    "uhrada_kc": [
+      7386735950.5199995,
+      8077647342.51,
+      9119251302.17,
+      10398640376.88,
+      11360278844.88
+    ]
+  },
+  "subkategorie": {
+    "01": [
+      {
+        "kod": "01.01",
+        "pacienti_2024": 77639,
+        "uhrada_2020": 37539369.59,
+        "uhrada_2024": 47626075.12
+      },
+      {
+        "kod": "01.02",
+        "pacienti_2024": 41536,
+        "uhrada_2020": 313614131.54,
+        "uhrada_2024": 1420517106.77
+      },
+      {
+        "kod": "01.03",
+        "pacienti_2024": 70140,
+        "uhrada_2020": 29382053.37,
+        "uhrada_2024": 47088877.69
+      },
+      {
+        "kod": "01.04",
+        "pacienti_2024": 5265,
+        "uhrada_2020": 2023581.57,
+        "uhrada_2024": 825681.23
+      }
+    ],
+    "02": [
+      {
+        "kod": "02.01",
+        "pacienti_2024": 359261,
+        "uhrada_2020": 2095205669.13,
+        "uhrada_2024": 2462008110.91
+      },
+      {
+        "kod": "02.02",
+        "pacienti_2024": 25637,
+        "uhrada_2020": 24874080.38,
+        "uhrada_2024": 28063555.13
+      },
+      {
+        "kod": "02.03",
+        "pacienti_2024": 7476,
+        "uhrada_2020": 291921811.4,
+        "uhrada_2024": 378098414.69
+      }
+    ],
+    "03": [
+      {
+        "kod": "03.01",
+        "pacienti_2024": 13480,
+        "uhrada_2020": 504503546.65,
+        "uhrada_2024": 643216871.05
+      },
+      {
+        "kod": "03.02",
+        "pacienti_2024": 500,
+        "uhrada_2020": 18162669.32,
+        "uhrada_2024": 20680595.87
+      },
+      {
+        "kod": "03.03",
+        "pacienti_2024": 5580,
+        "uhrada_2020": 266248742.53,
+        "uhrada_2024": 250640337.46
+      },
+      {
+        "kod": "03.04",
+        "pacienti_2024": 0,
+        "uhrada_2020": 403827.95,
+        "uhrada_2024": 0.0
+      },
+      {
+        "kod": "03.05",
+        "pacienti_2024": 175,
+        "uhrada_2020": 4088760.11,
+        "uhrada_2024": 4189148.58
+      },
+      {
+        "kod": "03.06",
+        "pacienti_2024": 105,
+        "uhrada_2020": 836966.22,
+        "uhrada_2024": 1546747.21
+      },
+      {
+        "kod": "03.07",
+        "pacienti_2024": 125,
+        "uhrada_2020": 426355.15,
+        "uhrada_2024": 580735.81
+      },
+      {
+        "kod": "03.08",
+        "pacienti_2024": 17540,
+        "uhrada_2020": 231566585.08,
+        "uhrada_2024": 456509352.89
+      },
+      {
+        "kod": "03.09",
+        "pacienti_2024": 19256,
+        "uhrada_2020": 62140448.57,
+        "uhrada_2024": 91680916.83
+      },
+      {
+        "kod": "03.10",
+        "pacienti_2024": 54,
+        "uhrada_2020": 239667.34,
+        "uhrada_2024": 279496.56
+      }
+    ],
+    "04": [
+      {
+        "kod": "04.01",
+        "pacienti_2024": 44581,
+        "uhrada_2020": 10525025.96,
+        "uhrada_2024": 11353167.12
+      },
+      {
+        "kod": "04.02",
+        "pacienti_2024": 88180,
+        "uhrada_2020": 48653226.07,
+        "uhrada_2024": 58233821.25
+      },
+      {
+        "kod": "04.03",
+        "pacienti_2024": 236972,
+        "uhrada_2020": 62401777.71,
+        "uhrada_2024": 86960579.56
+      },
+      {
+        "kod": "04.04",
+        "pacienti_2024": 187369,
+        "uhrada_2020": 161543987.6,
+        "uhrada_2024": 203215867.45
+      },
+      {
+        "kod": "04.05",
+        "pacienti_2024": 582,
+        "uhrada_2020": 986703.55,
+        "uhrada_2024": 637817.2
+      },
+      {
+        "kod": "04.06",
+        "pacienti_2024": 10176,
+        "uhrada_2020": 18538659.98,
+        "uhrada_2024": 26114333.47
+      },
+      {
+        "kod": "04.07",
+        "pacienti_2024": 14405,
+        "uhrada_2020": 6420878.34,
+        "uhrada_2024": 12889016.47
+      }
+    ],
+    "05": [
+      {
+        "kod": "05.01",
+        "pacienti_2024": 54755,
+        "uhrada_2020": 10626780.83,
+        "uhrada_2024": 14776549.11
+      },
+      {
+        "kod": "05.02",
+        "pacienti_2024": 366666,
+        "uhrada_2020": 1120875022.17,
+        "uhrada_2024": 1828931231.54
+      },
+      {
+        "kod": "05.03",
+        "pacienti_2024": 131083,
+        "uhrada_2020": 450201612.25,
+        "uhrada_2024": 637696701.53
+      }
+    ],
+    "06": [
+      {
+        "kod": "06.01",
+        "pacienti_2024": 417380,
+        "uhrada_2020": 149083434.05,
+        "uhrada_2024": 183393207.1
+      },
+      {
+        "kod": "06.02",
+        "pacienti_2024": 625,
+        "uhrada_2020": 5861489.13,
+        "uhrada_2024": 8662574.59
+      },
+      {
+        "kod": "06.03",
+        "pacienti_2024": 50,
+        "uhrada_2020": 53792.3,
+        "uhrada_2024": 42248.63
+      },
+      {
+        "kod": "06.04",
+        "pacienti_2024": 1437,
+        "uhrada_2020": 2792880.64,
+        "uhrada_2024": 6662847.53
+      }
+    ],
+    "07": [
+      {
+        "kod": "07.01",
+        "pacienti_2024": 13687,
+        "uhrada_2020": 185281480.07,
+        "uhrada_2024": 224305606.17
+      },
+      {
+        "kod": "07.02",
+        "pacienti_2024": 280,
+        "uhrada_2020": 6165283.15,
+        "uhrada_2024": 7148156.44
+      },
+      {
+        "kod": "07.03",
+        "pacienti_2024": 254984,
+        "uhrada_2020": 160814994.36,
+        "uhrada_2024": 234731331.86
+      },
+      {
+        "kod": "07.04",
+        "pacienti_2024": 21072,
+        "uhrada_2020": 16857429.56,
+        "uhrada_2024": 21106314.17
+      },
+      {
+        "kod": "07.05",
+        "pacienti_2024": 4344,
+        "uhrada_2020": 59934654.25,
+        "uhrada_2024": 77407774.24
+      },
+      {
+        "kod": "07.06",
+        "pacienti_2024": 6747,
+        "uhrada_2020": 21435659.64,
+        "uhrada_2024": 33559020.01
+      }
+    ],
+    "08": [
+      {
+        "kod": "08.01",
+        "pacienti_2024": 36687,
+        "uhrada_2020": 220653755.17,
+        "uhrada_2024": 329536305.46
+      },
+      {
+        "kod": "08.02",
+        "pacienti_2024": 61,
+        "uhrada_2020": 12420020.7,
+        "uhrada_2024": 15534400.0
+      },
+      {
+        "kod": "9.1",
+        "pacienti_2024": 29669,
+        "uhrada_2020": 207236.6,
+        "uhrada_2024": 15311074.46
+      }
+    ],
+    "09": [
+      {
+        "kod": "09.01",
+        "pacienti_2024": 14490,
+        "uhrada_2020": 7323074.13,
+        "uhrada_2024": 7056445.62
+      },
+      {
+        "kod": "09.02",
+        "pacienti_2024": 0,
+        "uhrada_2020": 12474.0,
+        "uhrada_2024": 0.0
+      },
+      {
+        "kod": "09.03",
+        "pacienti_2024": 613,
+        "uhrada_2020": 1636271.56,
+        "uhrada_2024": 1350759.93
+      },
+      {
+        "kod": "09.04",
+        "pacienti_2024": 1152,
+        "uhrada_2020": 588040.39,
+        "uhrada_2024": 1331586.46
+      },
+      {
+        "kod": "10.1",
+        "pacienti_2024": 110830,
+        "uhrada_2020": 0.0,
+        "uhrada_2024": 76834660.73
+      },
+      {
+        "kod": "10.2",
+        "pacienti_2024": 1336,
+        "uhrada_2020": 0.0,
+        "uhrada_2024": 5959604.19
+      },
+      {
+        "kod": "10.3",
+        "pacienti_2024": 21700,
+        "uhrada_2020": 0.0,
+        "uhrada_2024": 8595443.09
+      },
+      {
+        "kod": "10.4",
+        "pacienti_2024": 108,
+        "uhrada_2020": 0.0,
+        "uhrada_2024": 59144.48
+      },
+      {
+        "kod": "11.1",
+        "pacienti_2024": 690,
+        "uhrada_2020": 1291968.65,
+        "uhrada_2024": 1153360.3
+      }
+    ],
+    "10": [
+      {
+        "kod": "10.01",
+        "pacienti_2024": 57063,
+        "uhrada_2020": 24013766.96,
+        "uhrada_2024": 45149137.85
+      },
+      {
+        "kod": "10.02",
+        "pacienti_2024": 2546,
+        "uhrada_2020": 1641761.49,
+        "uhrada_2024": 2685719.73
+      },
+      {
+        "kod": "10.03",
+        "pacienti_2024": 5106,
+        "uhrada_2020": 130841618.88,
+        "uhrada_2024": 127918887.42
+      },
+      {
+        "kod": "10.04",
+        "pacienti_2024": 46144,
+        "uhrada_2020": 332208099.14,
+        "uhrada_2024": 652037541.35
+      },
+      {
+        "kod": "10.05",
+        "pacienti_2024": 1217,
+        "uhrada_2020": 3053652.97,
+        "uhrada_2024": 3168304.33
+      },
+      {
+        "kod": "10.06",
+        "pacienti_2024": 448,
+        "uhrada_2020": 1350604.05,
+        "uhrada_2024": 1093582.82
+      },
+      {
+        "kod": "10.07",
+        "pacienti_2024": 427,
+        "uhrada_2020": 4358396.51,
+        "uhrada_2024": 24218340.99
+      },
+      {
+        "kod": "10.08",
+        "pacienti_2024": 362,
+        "uhrada_2020": 39847663.35,
+        "uhrada_2024": 91154641.7
+      },
+      {
+        "kod": "10.09",
+        "pacienti_2024": 597,
+        "uhrada_2020": 5973848.51,
+        "uhrada_2024": 13747474.94
+      }
+    ],
+    "11": [
+      {
+        "kod": "11",
+        "pacienti_2024": 170036,
+        "uhrada_2020": 217080659.95,
+        "uhrada_2024": 405002239.79
+      }
+    ]
+  }
+}
