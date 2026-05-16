@@ -1,6 +1,6 @@
 /* =============================================================
    Vizualizace zdravotnických prostředků 2020–2024
-   Načítá data/data.json a vykresluje 3 grafy v Chart.js 4.
+   Načítá data.json a vykresluje 3 grafy v Chart.js 4.
    ============================================================= */
 
 const COLORS = {
@@ -45,7 +45,7 @@ function getCss(varName) {
 
 /* ------------------------------------------------------------- */
 async function load() {
-  const data = await fetch('data/data.json').then(r => r.json());
+  const data = await fetch('data.json').then(r => r.json());
 
   fillKeyStats(data);
   drawTrend(data);
