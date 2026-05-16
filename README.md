@@ -50,50 +50,6 @@ Pro analýzu **na úrovni jednotlivých poskytovatelů (IČZ)** lze stejný regi
 └── README.md
 ```
 
-## Reprodukce / refresh dat
-
-Datový souhrn ÚZIS aktualizuje 1× ročně. Pro vygenerování `data/data.json` z přiloženého XLSX:
-
-```bash
-pip install -r requirements.txt
-python prepare_data.py data/source.xlsx
-```
-
-Pro stažení **aktuální** verze přímo z NZIP:
-
-```bash
-python prepare_data.py --download
-```
-
-Skript načítá list **„Typ ZP“** (11 typů úhradových skupin) jako hlavní zdroj a list **„Úhr. sk. – zkrácená XX.XX“** pro případné drill-downy. Výstupem je jediný `data/data.json` (~ 16 kB).
-
-## Lokální náhled
-
-GitHub Pages obslouží stránku staticky. Pro lokální vývoj:
-
-```bash
-python -m http.server 8000
-# pak otevři http://localhost:8000
-```
-
-(Otevření `index.html` přímo přes `file://` nebude fungovat – prohlížeč zablokuje `fetch('data/data.json')`.)
-
-## Nasazení na GitHub Pages
-
-1. Push do `main` (nebo libovolné větve).
-2. V GitHub → **Settings → Pages → Source: Deploy from a branch → main / root**.
-3. Odkaz `https://<uživatel>.github.io/<repo>/` bude funkční do několika minut.
-
-Soubor `.nojekyll` v rootu zaručí, že GitHub nebude zbytečně procházet stránku přes Jekyll.
-
-## Použité technologie
-
-- HTML 5 / CSS 3 (žádný build, žádné frameworky).
-- [Chart.js 4](https://www.chartjs.org) přes CDN pro grafy.
-- [Newsreader](https://fonts.google.com/specimen/Newsreader) (display) + [Public Sans](https://fonts.google.com/specimen/Public+Sans) (body) + [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (technické popisky) přes Google Fonts.
-- Python 3 + [pandas](https://pandas.pydata.org/) + [openpyxl](https://openpyxl.readthedocs.io/) pro přípravu dat.
-
 ## Licence
 
 - **Data:** © ÚZIS ČR, licence [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.cs). Při použití uvádějte citaci podle [stránky datasetu](https://www.nzip.cz/data/2215-zdravotnicke-prostredky-poukaz-uhradova-skupina-datovy-souhrn).
-- **Kód a vizuální zpracování:** MIT.
