@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zdravotnické prostředky na poukaz 2020–2024 · analýza otevřených dat NZIS</title>
+  <meta name="description" content="Analýza objemu zdravotnických prostředků hrazených z veřejného zdravotního pojištění v ČR za roky 2020–2024 podle otevřených dat Národního registru hrazených zdravotních služeb (NRHZS) zveřejněných ÚZIS na portálu NZIP." />
+  <meta name="author" content="Otevřená data NRHZS / ÚZIS ČR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Public+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="kicker">Otevřená data · NRHZS / ÚZIS ČR</div>
+    <h1>Za pět let stoupla úhrada za&nbsp;zdravotnické&nbsp;prostředky na&nbsp;poukaz o&nbsp;polovinu.</h1>
+    <p class="lede">
+      Plenky, glukometry, gázy, brýle, sluchadla&nbsp;– drobné věci, které <em>většina</em> z nás
+      jednou v životě bude potřebovat. Veřejné zdravotní pojištění je platí přes recept zvaný „poukaz“.
+      V&nbsp;roce 2024 stály <strong>11,4&nbsp;miliardy korun</strong>. Před pěti lety o&nbsp;čtyři miliardy
+      méně. Co za tím nárůstem stojí?
+    </p>
+    <div class="byline">
+      Analýza datového souhrnu <a href="https://www.nzip.cz/data/2215-zdravotnicke-prostredky-poukaz-uhradova-skupina-datovy-souhrn" target="_blank" rel="noopener">NR-04-33</a> · ÚZIS ČR
+      <span class="sep">·</span> data 2020–2024
+      <span class="sep">·</span> publikováno listopad 2025
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============= ČÍSLA NA ÚVOD ============= -->
+  <section class="container stats-grid" aria-label="Klíčová čísla">
+    <div class="stat">
+      <div class="stat-number" id="stat-uhrada-2024">—</div>
+      <div class="stat-label">úhrada v&nbsp;roce 2024<br><span class="muted">(11 typů ZP, celá ČR)</span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" id="stat-rust">—</div>
+      <div class="stat-label">růst úhrad oproti roku&nbsp;2020<br><span class="muted">v&nbsp;běžných cenách</span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" id="stat-baleni-2024">—</div>
+      <div class="stat-label">vydaných balení / kusů<br><span class="muted">v&nbsp;roce 2024</span></div>
+    </div>
+  </section>
+
+  <!-- ============= POPIS DATOVÉ SADY ============= -->
+  <section class="container narrative" id="dataset">
+    <div class="section-label">01 — Datová sada</div>
+    <h2>Odkud čísla pocházejí</h2>
+    <p>
+      Analýza vychází z&nbsp;datového souhrnu <strong>„Zdravotnické prostředky na poukaz dle úhradové
+      skupiny“</strong> (ID&nbsp;NR-04-33) zveřejněného Ústavem zdravotnických informací a statistiky ČR
+      (ÚZIS) na portálu <a href="https://www.nzip.cz/o-nzis-open" target="_blank" rel="noopener">NZIS Open</a>.
+      Datový souhrn agreguje záznamy z&nbsp;<strong>Národního registru hrazených zdravotních služeb (NRHZS)</strong>
+      &nbsp;– celostátní databáze, do&nbsp;které všech sedm zdravotních pojišťoven předává údaje
+      o&nbsp;všech vykázaných a&nbsp;uznaných zdravotních službách, lécích a&nbsp;materiálu hrazených
+      z&nbsp;veřejného zdravotního pojištění (cca <strong>30&nbsp;tisíc poskytovatelů zdravotních
+      služeb</strong>).
+    </p>
+    <p>
+      Sada obsahuje pro každou úhradovou skupinu zdravotnických prostředků a&nbsp;každý rok 2020–2024
+      tři ukazatele: <strong>počet unikátních pacientů</strong>, kterým byl prostředek vydán,
+      <strong>počet vydaných balení (kusů)</strong> a&nbsp;<strong>celkovou úhradu</strong>
+      od&nbsp;zdravotních pojišťoven v&nbsp;Kč.
+      Členění úhradových skupin vychází z&nbsp;<em>přílohy 3, oddílu C, tabulky č.&nbsp;1
+      zákona č.&nbsp;48/1997&nbsp;Sb.</em> o&nbsp;veřejném zdravotním pojištění.
+    </p>
+
+    <table class="meta-table">
+      <tbody>
+        <tr><th>Identifikátor</th><td>NR-04-33, verze 2025-01.01</td></tr>
+        <tr><th>Časové pokrytí</th><td>1.&nbsp;1.&nbsp;2020 — 31.&nbsp;12.&nbsp;2024 (5&nbsp;let)</td></tr>
+        <tr><th>Územní pokrytí</th><td>Česká republika (data ze&nbsp;všech 7&nbsp;zdravotních pojišťoven)</td></tr>
+        <tr><th>Granularita</th><td>úhradová skupina × rok (4&nbsp;úrovně agregace: XX, XX.XX, XX.XX.XX, XX.XX.XX.XX)</td></tr>
+        <tr><th>Velikost</th><td>~&nbsp;160&nbsp;kB (XLSX, 4&nbsp;listy)</td></tr>
+        <tr><th>Periodicita</th><td>1×&nbsp;ročně (s&nbsp;ročním zpožděním)</td></tr>
+        <tr><th>Licence</th><td>CC&nbsp;BY&nbsp;4.0</td></tr>
+        <tr><th>Stažení</th><td><a href="https://www.nzip.cz/data/nrhzs/datove-souhrny/Datovy-souhrn-NR-04-33-zdravotnicke-prostredky-poukaz-uhradova-skupina-2025-01.xlsx" target="_blank" rel="noopener">odkaz na XLSX (nzip.cz)</a></td></tr>
+      </tbody>
+    </table>
+
+    <details class="note">
+      <summary>Co znamená „na poukaz“ a&nbsp;čím se sada liší od&nbsp;ostatních?</summary>
+      <p>
+        Pojem <em>zdravotnické prostředky na&nbsp;poukaz</em> označuje pomůcky, které pacient
+        dostává předepsané lékařem na&nbsp;tištěném nebo elektronickém poukazu a&nbsp;vyzvedává je
+        ve&nbsp;výdejně nebo lékárně. Patří sem inkontinenční pomůcky, diabetický spotřební
+        materiál, krytí ran, kompresivní punčochy, brýle, sluchadla atd.
+      </p>
+      <p>
+        Datová sada <strong>nezahrnuje</strong>: zdravotnické prostředky aplikované při hospitalizaci
+        nebo v&nbsp;ambulanci (ty jsou součástí jiné sady – „Zdravotnický materiál vykázaný v&nbsp;rámci
+        veřejného zdravotního pojištění“), připojištěné a&nbsp;samoplátecké položky a&nbsp;položky,
+        které pojišťovna nevykazuje.
+      </p>
+      <p>
+        Pokud potřebujete tatáž data <em>na úrovni jednotlivých poskytovatelů (IČZ)</em>, ÚZIS
+        publikuje rovněž rozsáhlejší (~&nbsp;180&nbsp;MB) otevřenou sadu
+        <a href="https://www.nzip.cz/data/2217-zdravotnicke-prostredky-kod-mesic-icz-otevrena-data" target="_blank" rel="noopener">NR-04-31</a> 
+        v&nbsp;CSV, která obsahuje řádky <em>rok&nbsp;× měsíc&nbsp;× kód&nbsp;ZP&nbsp;× IČZ poskytovatele&nbsp;× odbornost&nbsp;× okres</em>.
+      </p>
+    </details>
+  </section>
+
+  <!-- ============= VIZUALIZACE 1 ============= -->
+  <section class="container narrative" id="vis-trend">
+    <div class="section-label">02 — Vývoj v čase</div>
+    <h2>Z&nbsp;čeho se 11&nbsp;miliard skládá</h2>
+    <p class="dek">
+      Stoupají úhrady plošně, nebo to táhne pár konkrétních kategorií?
+      Stohovaný graf ukazuje příspěvek každého z&nbsp;11&nbsp;typů zdravotnických prostředků
+      k&nbsp;celkové roční úhradě.
+    </p>
+
+    <div class="chart-wrap">
+      <div class="chart-frame" style="height: 480px;">
+        <canvas id="chart-trend"></canvas>
+      </div>
+      <p class="caption">Graf&nbsp;1 · Vývoj úhrad za&nbsp;ZP na&nbsp;poukaz podle typu, 2020–2024 (mld&nbsp;Kč). Zdroj: NRHZS NR-04-33.</p>
+    </div>
+
+    <h3>Co graf říká laikovi</h3>
+    <p>
+      Celková úhrada vyrostla mezi roky 2020 a&nbsp;2024 o&nbsp;víc než tři a&nbsp;půl miliardy korun
+      (z&nbsp;7,4 na&nbsp;11,4&nbsp;mld&nbsp;Kč). To je nárůst zhruba o&nbsp;polovinu za&nbsp;pět let –
+      výrazně nad inflací. Hlavními „motory“ tohoto růstu jsou tři kategorie:
+    </p>
+    <ul>
+      <li>
+        <strong>Inkontinenční pomůcky (typ 02)</strong> – největší jednotlivá položka, stabilně
+        kolem 2,4–2,9&nbsp;mld&nbsp;Kč ročně. Roste pomalu, ale zato vždycky. Týká se přes 375&nbsp;tisíc lidí
+        ročně a&nbsp;přibývá s&nbsp;tím, jak stárne populace.
+      </li>
+      <li>
+        <strong>Diabetické pomůcky (typ 05)</strong> – druhá největší výdajová kategorie.
+        Růst zde táhne hlavně přechod od&nbsp;jednoduchých testovacích proužků ke&nbsp;kontinuálním
+        glukózovým senzorům (CGM), které pojišťovny od roku 2020 stále více proplácí.
+      </li>
+      <li>
+        <strong>Krytí ran (typ 01)</strong> – ze&nbsp;čtvrté největší kategorie v&nbsp;roce 2020
+        (380&nbsp;mil.&nbsp;Kč) se za&nbsp;čtyři roky stala třetí největší (1,5&nbsp;mld&nbsp;Kč).
+        To je čtyřnásobek za&nbsp;5&nbsp;let. Důvodem je nástup moderních hydrokoloidních a&nbsp;vlhkých
+        krytí pro chronické rány, zejména u&nbsp;diabetiků a&nbsp;u&nbsp;péče o&nbsp;seniory.
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============= VIZUALIZACE 2 ============= -->
+  <section class="container narrative" id="vis-categories">
+    <div class="section-label">03 — Pohled „na jednoho člověka“</div>
+    <h2>Které kategorie jsou velké&nbsp;– a&nbsp;které drahé</h2>
+    <p class="dek">
+      Někdy je něco velkou položkou, protože to bere hodně lidí (inkontinence). Jindy je něco velkou
+      položkou, protože je to drahé na&nbsp;jednoho člověka (sluchadla, sondy pro výživu). 
+      Tento graf konfrontuje obojí.
+    </p>
+
+    <div class="chart-wrap">
+      <div class="chart-frame" style="height: 560px;">
+        <canvas id="chart-perpatient"></canvas>
+      </div>
+      <p class="caption">Graf&nbsp;2 · Úhrada na&nbsp;1&nbsp;pacienta vs.&nbsp;celková úhrada v&nbsp;roce 2024. Velikost bubliny = počet pacientů. Zdroj: NRHZS NR-04-33.</p>
+    </div>
+
+    <h3>Co graf říká laikovi</h3>
+    <p>
+      Bublinkový graf má tři rozměry. Vodorovně je úhrada na&nbsp;jednoho pacienta za&nbsp;rok – 
+      tedy „kolik průměrně stojí, když to&nbsp;jeden člověk používá“. Svisle je úhrada celkem.
+      Velikost bubliny ukazuje, kolika lidí se daná kategorie týká.
+    </p>
+    <ul>
+      <li>
+        <strong>Pravý horní roh</strong>: <em>Dýchání a&nbsp;výživa (typ 03)</em> – malá kategorie
+        (21&nbsp;800&nbsp;pacientů), ale obří průměrná částka přes 67&nbsp;000&nbsp;Kč ročně na osobu.
+        Jde o&nbsp;kyslíkové koncentrátory, sondy pro enterální výživu a&nbsp;podobné technologicky
+        náročné pomůcky pro vážně nemocné.
+      </li>
+      <li>
+        <strong>Sluch (typ 10)</strong> a&nbsp;<em>Ortopedie / protetika (typ 07)</em> jsou rovněž
+        nákladné na osobu (5&nbsp;000–9&nbsp;000&nbsp;Kč ročně), ale týkají se výrazně více lidí.
+      </li>
+      <li>
+        <strong>Levý dolní roh</strong>: <em>Stomie (typ 04)</em> a&nbsp;<em>Kompresivní terapie
+        (typ 06)</em> – statisíce pacientů, ale jednotlivá pomůcka stojí jen několik stokorun.
+        Celkové výdaje pak nejsou extrémní.
+      </li>
+      <li>
+        Pozice <em>Diabetes</em> a&nbsp;<em>Inkontinence</em> uprostřed ilustruje, proč zaberou tak
+        velký kus celkového koláče: <strong>velký počet pacientů × střední cena</strong>.
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============= VIZUALIZACE 3 ============= -->
+  <section class="container narrative" id="vis-growth">
+    <div class="section-label">04 — Kde to roste nejrychleji</div>
+    <h2>Procentuální nárůst úhrad 2020 → 2024</h2>
+    <p class="dek">
+      Stejná čísla, jiná otázka: <em>relativně</em>, kde se utratilo víc?
+    </p>
+
+    <div class="chart-wrap">
+      <div class="chart-frame" style="height: 460px;">
+        <canvas id="chart-growth"></canvas>
+      </div>
+      <p class="caption">Graf&nbsp;3 · Procentuální změna celkové roční úhrady mezi lety 2020 a&nbsp;2024. Zdroj: NRHZS NR-04-33.</p>
+    </div>
+
+    <h3>Co graf říká laikovi</h3>
+    <p>
+      Spektakulární růst <strong>kategorie&nbsp;09 (Zrak)</strong> není „skutečným“ růstem spotřeby
+      brýlí. Je projevem <strong>změny zákona</strong>: brýlové čočky a&nbsp;pomůcky pro slabozraké
+      se v&nbsp;průběhu let 2021–2022 zařadily do&nbsp;úhrad ze&nbsp;zdravotního pojištění. Z&nbsp;11&nbsp;mil. Kč
+      ročně se kategorie přes noc rozšířila na&nbsp;více než 100&nbsp;mil. Kč. To je užitečné
+      memento: <em>změna metodiky vykazování může vytvořit „růst“, který ve skutečnosti není
+      růstem spotřeby</em>.
+    </p>
+    <p>
+      Naopak růst <strong>Krytí ran (+296&nbsp;%)</strong>, <strong>Hlasu a&nbsp;řeči (+87&nbsp;%)</strong>,
+      <strong>Sluchu (+77&nbsp;%)</strong> i&nbsp;<strong>Diabetu (+57&nbsp;%)</strong> už reálné je – odráží
+      jednak postupné zavádění modernějších technologií do&nbsp;úhrad, jednak stárnutí populace
+      a&nbsp;rostoucí počet pacientů s&nbsp;chronickým onemocněním.
+    </p>
+  </section>
+
+  <!-- ============= LIMITY ============= -->
+  <section class="container narrative" id="limity">
+    <div class="section-label">05 — Limity dat</div>
+    <h2>Co tato analýza <em>neříká</em></h2>
+    <ol>
+      <li>
+        <strong>Není to celá útrata na pomůcky.</strong> Datový souhrn pokrývá pouze
+        prostředky vydané <em>na&nbsp;poukaz</em> – tedy předepsané lékařem a&nbsp;vydané ve&nbsp;výdejně.
+        Pomůcky spotřebované při hospitalizaci, ambulantním výkonu nebo aplikované přímo ve&nbsp;zdravotnickém
+        zařízení (typicky tzv.&nbsp;ZÚM – zvlášť účtovaný materiál) jsou v&nbsp;jiné datové sadě.
+      </li>
+      <li>
+        <strong>Pacienti se nedají sčítat napříč kategoriemi.</strong> Jeden člověk s&nbsp;diabetem
+        a&nbsp;hypertenzí může čerpat ZP z&nbsp;několika typů současně. Číslo „375&nbsp;828&nbsp;pacientů
+        v&nbsp;kategorii inkontinence v&nbsp;roce 2024“ je přesné; <em>součet</em> přes všechny
+        kategorie ale není.
+      </li>
+      <li>
+        <strong>Růst v&nbsp;Kč není růst spotřeby.</strong> Část navýšení úhrad jde na vrub inflace,
+        cenovým úpravám v&nbsp;úhradovém katalogu, novým technologiím a&nbsp;rozšíření vykazování.
+        Vždy je třeba dívat se zároveň na&nbsp;počet pacientů a&nbsp;počet balení.
+      </li>
+      <li>
+        <strong>Pro analýzu na úrovni jednotlivého poskytovatele</strong> (např. nemocnice
+        nebo výdejny) je třeba pracovat s&nbsp;rozsáhlejší otevřenou sadou
+        <a href="https://www.nzip.cz/data/2217-zdravotnicke-prostredky-kod-mesic-icz-otevrena-data" target="_blank" rel="noopener">NR-04-31</a>
+        (granularita IČZ &times; měsíc &times; kód ZP).
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============= ZDROJE A METODA ============= -->
+  <section class="container narrative" id="metoda">
+    <div class="section-label">06 — Metoda a&nbsp;reprodukovatelnost</div>
+    <h2>Jak vznikly grafy</h2>
+    <ol>
+      <li>
+        Stáhnut datový souhrn <code>NR-04-33</code> (XLSX, 158&nbsp;kB) z&nbsp;portálu NZIP – list
+        <em>„Typ ZP“</em> obsahuje 11&nbsp;úhradových typů zdravotnických prostředků.
+      </li>
+      <li>
+        Skript <code>prepare_data.py</code> (Python&nbsp;3 + pandas) převádí XLSX na lehký
+        JSON (~&nbsp;16&nbsp;kB), který načítá tato stránka.
+      </li>
+      <li>
+        Grafy vykresluje knihovna <a href="https://www.chartjs.org" target="_blank" rel="noopener">Chart.js&nbsp;4</a>
+        v&nbsp;prohlížeči. Žádný backend není potřeba; vše běží jako statická stránka
+        z&nbsp;GitHub&nbsp;Pages.
+      </li>
+      <li>
+        Veškerý zdrojový kód i&nbsp;data jsou v&nbsp;GitHub repozitáři &ndash; viz odkaz v&nbsp;patičce.
+        Aktualizace dat: <code>python&nbsp;prepare_data.py&nbsp;--download</code>.
+      </li>
+    </ol>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>
+      <strong>Zdroj dat:</strong> Vysoudil&nbsp;M., Jarkovský&nbsp;J., Klika&nbsp;P., Klimeš&nbsp;D.,
+      Mužík&nbsp;J., Komenda&nbsp;M., Dušek&nbsp;L. <em>Zdravotnické prostředky na poukaz dle úhradové
+      skupiny</em>. Národní zdravotnický informační portál [online]. Praha: MZ ČR a&nbsp;ÚZIS&nbsp;ČR, 2024.
+      Dostupné z: <a href="https://www.nzip.cz/data/2215-zdravotnicke-prostredky-poukaz-uhradova-skupina-datovy-souhrn" target="_blank" rel="noopener">nzip.cz/data/2215</a>.
+      ISSN&nbsp;2695-0340.
+    </p>
+    <p class="muted">
+      Licence dat: CC&nbsp;BY&nbsp;4.0 (ÚZIS&nbsp;ČR). Tato analýza je nezávislé zpracování otevřených dat;
+      žádné údaje o&nbsp;konkrétních pacientech neobsahuje.
+    </p>
+  </div>
+</footer>
+
+<!-- Chart.js + script -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
