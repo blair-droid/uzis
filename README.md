@@ -2,7 +2,7 @@
 
 Statická webová analýza objemu zdravotnických prostředků hrazených z veřejného zdravotního pojištění v České republice za posledních pět let, založená na otevřených datech [Národního registru hrazených zdravotních služeb (NRHZS)](https://www.uzis.cz/index.php?pg=registry-sber-dat--narodni-registr-hrazenych-zdravotnich-sluzeb), zveřejněných Ústavem zdravotnických informací a statistiky ČR (ÚZIS) na portálu [NZIS Open / NZIP](https://www.nzip.cz/o-nzis-open).
 
-**Demo:** _po nasazení na GitHub Pages doplň odkaz, např._ `https://<uživatel>.github.io/<repo>/`
+**Demo:** [_po nasazení na GitHub Pages doplň odkaz, např._ `https://<uživatel>.github.io/<repo>/`](https://github.com/blair-droid/uzis)
 
 ## Co stránka obsahuje
 
